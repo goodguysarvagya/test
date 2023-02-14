@@ -17,7 +17,7 @@ const Gallery = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xlg:grid-cols-6 gap-2">
       {images.map((image, index) => (
-        <div key={index} className="w-full h-64">
+        <div key={index} className="w-full h-64 bg-clip-padding">
           <Image
             src={image.src}
             alt={image.alt}
